@@ -1,4 +1,4 @@
-<<?php
+<?php
 // src/OC/PlatformBundle/Entity/Skill.php
 
 namespace WM\PlatformBundle\Entity;
