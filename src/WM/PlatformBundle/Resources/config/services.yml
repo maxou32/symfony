@@ -1,0 +1,10 @@
+services:
+#    wm_platform.example:
+#        class: WM\PlatformBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
+    wm_platform.antispam:
+        class: WM\PlatformBundle\Antispam\WMAntispam
+        arguments:
+            - "@mailer"
+            - %locale%
+            - 50

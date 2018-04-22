@@ -1,0 +1,22 @@
+wm_core:
+    path:     /
+    defaults: 
+        _controller: WMCoreBundle:Core:home 
+    
+wm_core_platform:
+    path:     /platform/{page}
+    defaults: 
+        _controller: WMPlatformBundle:Advert:index 
+        page:  1
+    requirements:
+        page: \d*
+
+wm_core_forum:
+    path:     /forum
+    defaults: 
+        _controller: WMCoreBundle:Core:forum
+
+wm_core_contact:
+    path:     /contact
+    defaults: 
+        _controller: WMCoreBundle:Core:contact

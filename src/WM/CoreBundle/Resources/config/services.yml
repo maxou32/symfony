@@ -1,0 +1,4 @@
+services:
+#    wm_core.example:
+#        class: WM\CoreBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]

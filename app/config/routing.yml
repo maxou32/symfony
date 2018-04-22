@@ -1,0 +1,11 @@
+wm_core:
+    resource: "@WMCoreBundle/Resources/config/routing.yml"
+    prefix:   /
+
+wm_platform:
+    resource: "@WMPlatformBundle/Resources/config/routing.yml"
+    prefix:   /platform
+    
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation

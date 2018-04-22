@@ -1,0 +1,11 @@
+
+<h4>Voulez-vous :</h4>
+	<nav>
+		{% for item in listMenu %}
+			<a class="btn btn-primary btn-lg" href="{{ path(item.path) }}"> 
+			  {{ item.title }}
+			</a>
+		{% else %}
+		  <li>Pas (encore !) de menu trouvé</li>
+		{% endfor %}
+	</nav>
