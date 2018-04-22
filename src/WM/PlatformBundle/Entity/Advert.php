@@ -5,7 +5,7 @@ namespace WM\PlatformBundle\Entity;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 // N'oubliez pas ce use :
-use Gedmo\Mapping\Annotation as Gedmo;
+//use Gedmo\Mapping\Annotation as Gedmo;
 
 /**
  * @ORM\Table(name="wm_advert")
@@ -72,11 +72,6 @@ class Advert
    */
   private $nbApplications = 0;
 
-  /**
-   * @Gedmo\Slug(fields={"title"})
-   * @ORM\Column(name="slug", type="string", length=255, unique=true)
-   */
-  private $slug;
 
   public function __construct()
   {
